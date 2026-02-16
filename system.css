@@ -1,3 +1,20 @@
+/* タイトル画面 */
+.taitoru{
+    background-image: url(taitoru.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.taitoru-mozi{
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 400px auto;
+}
+
 .foodimg{
     height: 200px;
     width: 200px;
