@@ -8,12 +8,12 @@ const foods = [
     { name: "腐った肉", risk: 65, heal: 50, image: "meat.png" },
     { name: "水", risk: 1, heal: 5, image: "water.png" },
     { name: "玉子豆腐", risk: 99, heal: 100, image: "drug.png" },
-    { name: "消しゴム", risk: 10, heal: 10, image: "drug.png" },
-    { name: "鉛筆の芯", risk: 20, heal: 5, image: "drug.png" },
-    { name: "鼻セレブ", risk: 5, heal: 10, image: "drug.png" },
-    { name: "灯油", risk: 70, heal: 30, image: "drug.png" },
-    { name: "輪ゴム", risk: 20, heal: 10, image: "drug.png" },
-    { name: "化粧水", risk: 30, heal: 30, image: "drug.png" },
+    { name: "消しゴム", risk: 10, heal: 10, image: "eraser.png" },
+    { name: "鉛筆の芯", risk: 20, heal: 5, image: "pen.png" },
+    { name: "鼻セレブ", risk: 5, heal: 10, image: "serebu.png" },
+    { name: "灯油", risk: 70, heal: 30, image: "oil.png" },
+    { name: "輪ゴム", risk: 20, heal: 10, image: "gomu.png" },
+    { name: "化粧水", risk: 30, heal: 30, image: "facewater.png" },
     { name: "たくまの腕", risk: 70, heal: 70, image: "takuma.png" }
 ];
 
