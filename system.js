@@ -14,7 +14,10 @@ const foods = [
     { name: "灯油", risk: 70, heal: 30, image: "oil.png" },
     { name: "輪ゴム", risk: 20, heal: 10, image: "gomu.png" },
     { name: "化粧水", risk: 30, heal: 30, image: "facewater.png" },
-    { name: "たくまの腕", risk: 70, heal: 70, image: "takuma.png" }
+    { name: "たくまの腕", risk: 70, heal: 70, image: "takuma.png" },
+    { name: "鬼門のラーメン", risk: 95, heal: 5, image: "kimonramen"},
+    { name: "やさしく学べる線形数学", risk: 34, heal: 15, image: "senkeimath"},
+    { name: "やさしく学べる離散数学", risk: 61, heal: 20, image: "risanmath"},
 ];
 
 
