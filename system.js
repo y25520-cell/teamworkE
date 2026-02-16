@@ -14,7 +14,23 @@ const foods = [
     { name: "灯油", risk: 70, heal: 30, image: "drug.png" },
     { name: "輪ゴム", risk: 20, heal: 10, image: "drug.png" },
     { name: "化粧水", risk: 30, heal: 30, image: "drug.png" },
-    { name: "たくまの腕", risk: 70, heal: 70, image: "takuma.png" }
+    { name: "たくまの腕", risk: 70, heal: 70, image: "takuma.png" },
+    { name: "スティックのり", risk: 70, heal: 10, image: "nori.png" },
+    { name: "どんぐり", risk: 10, heal: 5, image: "donguri.png" },
+    { name: "消臭ビーズ", risk: 50, heal: 20, image: "syousyuu.png" },
+    { name: "入浴剤", risk: 50, heal: 20, image: "drug.png" },
+    { name: "スマホ", risk: 80, heal: 5, image: "drug.png" },
+    { name: "空気", risk: 0, heal:0, image: "drug.png" },
+    { name: "蚊取り線香の灰", risk: 60, heal: 10, image: "katorisenkou.png" },
+    { name: "トースターの底に溜まったパン粉", risk: 30, heal: 20, image: "drug.png" },
+    { name: "醤油の口の部分にできる結晶", risk: 50, heal: 10, image: "syou.png" },
+    { name: "乾燥剤", risk: 70, heal: 20, image: "drug.png" },
+    { name: "保冷剤", risk: 70, heal: 20, image: "drug.png" },
+    { name: "歯磨き粉", risk: 10, heal: 10, image: "drug.png" },
+    { name: "キャットフード", risk: 10, heal: 10, image: "catfood.png" },
+    { name: "ゆでる前のパスタ", risk: 10, heal: 20, image: "drug.png" },
+    { name: "しゃもじについたカピカピの米", risk: 10, heal: 30, image: "kapikapi.png" },
+
 ];
 
 
