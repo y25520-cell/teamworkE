@@ -54,11 +54,15 @@ function nextFood() {
 }
 
 function eat() {
+    //食べる食べないボタン削除
+    btnkill();
     const randomNumber = Math.floor(Math.random() * 100) + 1;
 
+    //死亡する場合
     if (randomNumber <= currentFood.risk) {
         document.getElementById("message").textContent =
             "死亡";
+        //ボタン無無効化
         disableButtons();
         return;
     }
@@ -66,32 +70,46 @@ function eat() {
     hp += currentFood.heal;
     hp = Math.min(hp, 150);
 
-    document.getElementById("message").textContent =
-        "生存！";
+    document.getElementById("hp").textContent = hp;
+    document.getElementById("message").textContent =currentFood.name + "を食べた！生存！";
 
-    nextDay();
+    //次の日ボタン作成
+    document.getElementById("nextBtn").style.display = "inline";
 }
 
 function skip() {
-    hp -= 15;
+    btnkill();
 
+    hp -= 15;
     if (hp <= 0) {
         document.getElementById("message").textContent = "餓死…";
         disableButtons();
         return;
     }
-
+    document.getElementById("hp").textContent = hp;
     document.getElementById("message").textContent = "食べなかった…";
-    nextDay();
+    document.getElementById("nextBtn").style.display = "inline";
 }
 
 function nextDay() {
     day++;
 
     document.getElementById("day").textContent = day;
-    document.getElementById("hp").textContent = hp;
+    document.getElementById("message").textContent = "";
+    document.getElementById("nextBtn").style.display = "none";
 
+    btnlife();
     nextFood();
+}
+
+function btnkill() {
+    document.getElementById("eatBtn").style.display = "none";
+    document.getElementById("skipBtn").style.display = "none";
+}
+
+function btnlife() {
+    document.getElementById("eatBtn").style.display = "inline";
+    document.getElementById("skipBtn").style.display = "inline";
 }
 
 function disableButtons() {

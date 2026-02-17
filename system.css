@@ -1,6 +1,6 @@
 /* タイトル画面 */
 .taitoru{
-    background-image: url(taitoru.jpg);
+    background-image: url(/img/taitoru.jpg);
     background-repeat: no-repeat;
     background-position: center top;
 }
