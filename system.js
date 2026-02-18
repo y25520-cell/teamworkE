@@ -1,5 +1,6 @@
 let day = 1;
 let hp = 100;
+document.body.style.backgroundColor = "antiquewhite";
 
 const foods = [
     { name: "寿司", risk: 5, heal: 10, image: "img/sushi.png", death: "アニサキスは非情、死"} ,
@@ -62,6 +63,7 @@ function eat() {
     if (randomNumber <= currentFood.risk) {
         document.getElementById("message").textContent =currentFood.death;
         //ボタン無無効化
+        document.body.style.backgroundColor = "rgba(156, 21, 21, 0.658)";
         disableButtons();
         return;
     }
