@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+      
     <link rel="stylesheet" href="system.css">
     <title>蒼來サバイバル</title>
 </head>
 <body>
-
-    <h1>蒼來サバイバル</h1>
+<div class="gamebody">
+    <h1>そうらいサバイバル</h1>
 
     <p>日数: <span id="day">1</span>日目</p>
     <p>体力: <span id="hp">100</span></p>
 
-    <hr>
+
 
     <h2 id="foodName"></h2>
 
@@ -22,13 +26,13 @@
 
     <p>危険度: <span id="risk"></span>%</p>
 
-    <button onclick="eat()">食べる</button>
-    <button onclick="skip()">食べない</button>
+    <button id="eatBtn" onclick="eat()">たべる</button>
+    <button id="skipBtn" onclick="skip()">たべない</button>
+    <button id="nextBtn" onclick="nextDay()" style="display:none;">次の日へ</button>
+    
     <a href="game.html">リスタート</a>
-
-    <hr>
-
     <p id="message"></p>
+</div>
 
 <script src="system.js"></script>
 
