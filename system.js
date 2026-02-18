@@ -70,7 +70,7 @@ function eat() {
     hp = Math.min(hp, 150);
 
     document.getElementById("hp").textContent = hp;
-    document.getElementById("message").textContent =currentFood.name + "を食べた！生存！";
+    document.getElementById("message").textContent =currentFood.name + "を食べた！";
 
     //次の日ボタン作成
     document.getElementById("nextBtn").style.display = "inline";
