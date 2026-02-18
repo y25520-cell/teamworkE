@@ -3,9 +3,9 @@ let hp = 100;
 
 const foods = [
 
-    { name: "鬼門のラーメン", risk: 95, heal: 5, image: "kimonramen"},
-    { name: "やさしく学べる線形数学", risk: 34, heal: 15, image: "senkeimath"},
-    { name: "やさしく学べる離散数学", risk: 61, heal: 20, image: "risanmath"},
+    { name: "鬼門のラーメン", risk: 95, heal: 5, image: "img/kimonramen.jpeg"},
+    { name: "やさしく学べる線形数学", risk: 34, heal: 15, image: "img/senkeimath.jpg"},
+    { name: "やさしく学べる離散数学", risk: 61, heal: 20, image: "img/risanmath.jpg"},
     { name: "寿司", risk: 5, heal: 10, image: "img/sushi.png" },
     { name: "ハンバーガー", risk: 15, heal: 25, image: "img/burger.png" },
     { name: "怪しいキノコ", risk: 40, heal: 35, image: "img/mushroom.png" },
