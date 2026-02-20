@@ -1,5 +1,5 @@
 let day = 1;
-let hp = 100;
+let hp = 50;
 document.body.style.backgroundColor = "antiquewhite";
 
 const foods = [
@@ -54,7 +54,7 @@ function nextFood() {
     document.getElementById("foodName").textContent = currentFood.name;
     document.getElementById("risk").textContent = currentFood.risk;
 
-    // 画像切り替え
+    //食べ物 画像切り替え
     document.getElementById("foodImage").src = currentFood.image;
 }
 
@@ -72,6 +72,7 @@ function eat() {
         return;
     }
 
+    document.getElementById("souraiimg").src = "img/good.png";
     hp += currentFood.heal;
     hp = Math.min(hp, 150);
 
@@ -99,6 +100,7 @@ function skip() {
 function nextDay() {
     day++;
 
+    document.getElementById("souraiimg").src = "img/taiki.png"
     document.getElementById("day").textContent = day;
     document.getElementById("message").textContent = "";
     document.getElementById("nextBtn").style.display = "none";
@@ -119,6 +121,7 @@ function btnlife() {
 
 function disableButtons() {
     document.querySelectorAll("button").forEach(btn => btn.disabled = true);
+    document.getElementById("souraiimg").src = "img/si.png"
 }
 
 nextFood();
