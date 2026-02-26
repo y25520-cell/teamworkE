@@ -1,3 +1,15 @@
+//最高スコア読み取り
+let highScore = localStorage.getItem("souraiHighScore");
+
+if (highScore === null) {
+    highScore = 0;
+} else {
+    highScore = Number(highScore);
+}
+
+document.getElementById("highScore").textContent = highScore;
+
+
 let day = 1;
 let hp = 50;
 document.body.style.backgroundColor = "antiquewhite";
@@ -66,6 +78,9 @@ function eat() {
     //死亡する場合
     if (randomNumber <= currentFood.risk) {
         document.getElementById("message").textContent =currentFood.death;
+
+        saveScore(); 
+
         //ボタン無無効化
         document.body.style.backgroundColor = "rgba(156, 21, 21, 0.658)";
         disableButtons();
@@ -83,12 +98,14 @@ function eat() {
     document.getElementById("nextBtn").style.display = "inline";
 }
 
+//食べない
 function skip() {
     btnkill();
 
     hp -= 15;
     if (hp <= 0) {
         document.getElementById("message").textContent = "餓死…";
+        saveScore(); 
         disableButtons();
         return;
     }
@@ -97,6 +114,7 @@ function skip() {
     document.getElementById("nextBtn").style.display = "inline";
 }
 
+//次の日
 function nextDay() {
     day++;
 
@@ -122,6 +140,15 @@ function btnlife() {
 function disableButtons() {
     document.querySelectorAll("button").forEach(btn => btn.disabled = true);
     document.getElementById("souraiimg").src = "img/si.png"
+}
+
+//スコアセーブ
+function saveScore() {
+    if (day > highScore) {
+        highScore = day;
+        localStorage.setItem("souraiHighScore", highScore);
+        document.getElementById("highScore").textContent = highScore;
+    }
 }
 
 nextFood();
