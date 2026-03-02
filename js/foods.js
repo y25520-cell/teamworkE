@@ -1,7 +1,7 @@
 const foods = [
 
-    { name: "やさしく学べる線形数学", risk: 34, heal: 15, image: "img/senkeimath.jpg"},
-    { name: "やさしく学べる離散数学", risk: 61, heal: 20, image: "img/risanmath.jpg"},
+    { name: "やさしく学べる線形数学", risk: 34, heal: 15, image: "img/senkeimath.jpg", death: "単位を落とした...留年"},
+    { name: "やさしく学べる離散数学", risk: 61, heal: 20, image: "img/risanmath.jpg", death: "単位を落とした...留年"},
     { name: "寿司", risk: 5, heal: 10, image: "img/sushi.png", death: "アニサキスは非情、死"} ,
     { name: "ハンバーガー", risk: 15, heal: 25, image: "img/burger.png", death: "思っているよりも火は通っていなかった、死" },
     { name: "怪しいキノコ", risk: 40, heal: 35, image: "img/mushroom.png", death: "この見た目でセーフなわけないだろ、死" },
@@ -36,4 +36,14 @@ const foods = [
     { name: "チョウチンアンコウのここ", risk: 85, heal: 20, image: "img/anko.png", death: "交尾してしまった、あああああああ！！" },
     { name: "カエルのたまご", risk: 45, heal: 30, image: "img/kaeru.png", death: "タピオカブーム再来" },
     { name: "人工芝", risk: 30, heal: 30, image: "img/shiba.png", death: "間のゴムがアクセント、死" },
+    { name: "Arduino", risk: 95, heal: 100, image: "img/arduino uno.png", death: "口の中にGNDピンの風味がひろがって、死" },
+    { name: "蒙古タンメン中卒", risk: 50, heal: 50, image: "img/moukotanmen.png", death: "辛くて辛くて、おらもう、死" },
+    { name: "カレー、おかわりもあるぞ！", risk: 10, heal: 50, image: "img/curry.png", death: "ただ今より毒ガス訓練を開始する！！" },
+    { name: "10円パン", risk: 30, heal: 40, image: "img/10en.png", death: "10円パンは10円ではなかった、破産" },
+    { name: "基本情報のやつ", risk: 50, heal: 0, image: "img/kayanoki.png", death: "蒼來は橋本派だった、死" },
+    { name: "ティーパックマン", risk: 0, heal: 100, image: "img/tea.png", death: "熱い！" },
+    { name: "ザガール", risk: 90, heal: 15, image: "img/garl.png", death: "いつだって喰う側とは限らない、死" },
+    { name: "あかべこ", risk: 30, heal: 50, image: "img/akabeko.png", death: "首が取れた、死" },
+    { name: "カンジャンケジャン", risk: 30, heal: 50, image: "img/kanjan.png", death: "ケジャンの毛ジャンジャン刺さんジャン、死" },
+    { name: "生牡蠣", risk: 22, heal: 40, image: "img/namagaki.png", death: "あたった、死" },
 ];
