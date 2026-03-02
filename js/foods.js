@@ -45,5 +45,5 @@ const foods = [
     { name: "樹液", risk: 39, heal: 30, image: "img/jueki.png", death: "甘い香りに誘われて、死" },
     { name: "ミッキーの耳", risk: 72, heal: 40, image: "img/mouth.png", death: "そこに夢はなかった、死" },
     { name: "ファン", risk: 17, heal: 10, image: "img/fan.png", death: "心地よい風、死" },
-    { name: "こんがり肉", risk: 5, heal: 30, image: "img/.png", death: "上手に焼けました、死" },
+    { name: "こんがり肉", risk: 5, heal: 30, image: "img/kongari.png", death: "上手に焼けました、死" },
 ];
