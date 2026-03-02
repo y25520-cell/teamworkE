@@ -3,7 +3,7 @@ let hp = 100;
 
 const foods = [
 
-    { name: "鬼門のラーメン", risk: 95, heal: 5, image: "img/kimonramen.jpeg"},
+    { name: "鬼門のラーメン", risk: 95, heal: 5, image: "img/kimonramen.jpg"},
     { name: "やさしく学べる線形数学", risk: 34, heal: 15, image: "img/senkeimath.jpg"},
     { name: "やさしく学べる離散数学", risk: 61, heal: 20, image: "img/risanmath.jpg"},
     { name: "寿司", risk: 5, heal: 10, image: "img/sushi.png" },
